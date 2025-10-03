@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2K Imports - Preço e Qualidade</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      max-height: 80px;
+      border-radius: 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .banner {
+      background: url('https://images.unsplash.com/photo-1521336575822-6da63fb45455') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px black;
+    }
+    .banner button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      background: #ffcc00;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .produto {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .produto img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .produto h3 {
+      margin: 10px 0;
+    }
+    .produto p {
+      color: green;
+      font-weight: bold;
+    }
+    .produto button {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .sobre {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+    .contato form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contato input, .contato textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contato button {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="C9317367-00EF-4C09-9393-C1F5B1139052.jpeg" alt="Logo 2K Imports">
+    <p>PREÇO E QUALIDADE</p>
+    <nav>
+      <a href="#banner">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Banner Principal -->
+  <section id="banner" class="banner">
+    <h1>Bem-vindo à 2K Imports</h1>
+    <p>As melhores roupas importadas com preço e qualidade</p>
+    <button onclick="document.getElementById('produtos').scrollIntoView()">Ver Produtos</button>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="section">
+    <h2>Produtos em Destaque</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/220x250" alt="Produto 1">
+        <h3>Camiseta Básica</h3>
+        <p>R$ 59,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/220x250" alt="Produto 2">
+        <h3>Calça Jeans</h3>
+        <p>R$ 129,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/220x250" alt="Produto 3">
+        <h3>Tênis Importado</h3>
+        <p>R$ 299,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="section">
+    <h2>Sobre Nós</h2>
+    <p class="sobre">
+      A <strong>2K Imports</strong> nasceu com o propósito de trazer o melhor da moda importada
+      para o Brasil, sempre com foco em <b>preço acessível</b> e <b>qualidade premium</b>.
+      Nosso objetivo é oferecer peças modernas, estilosas e confortáveis
+      para todos os gostos.  
+    </p>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section contato">
+    <h2>Entre em Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Siga-nos no Instagram: <a href="#">@2kimports</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5599999999999">Clique aqui</a></p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2025 2K Imports - Preço e Qualidade
+  </footer>
+
+</body>
+</html>
